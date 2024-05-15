@@ -9,7 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Byte Forum</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/css/navbarstyle.css" />
+      <style>
+    .list-group-item .btn {
+        background-color: #c2e9fb;
+        color: #333;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 0.25rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .list-group-item .btn:focus {
+        box-shadow: 0 0 0 0.25rem rgba(194, 233, 251, 0.5);
+    }
+
+    .list-group-item .btn:hover {
+        filter: brightness(95%);
+    }
+</style>
 
 </head>
 <body>
@@ -19,36 +37,240 @@
             <p class="lead">Get answers to your programming questions, collaborate, and share knowledge with a diverse community of developers.</p>
             <hr class="my-4">
             <p>Start by searching for a question or ask a new one to get help from the community.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Ask a Question</a>
+            <a class="btn btn-primary btn-lg" href="@Url.Action("askaque", "Home")" role="button">Ask a Question</a>
         </div>
 
         <div class="row">
-            <div class="col-md-8">
-                <h2>Recent Questions</h2>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">How to use Bootstrap in ASP.NET Core?</h5>
-                            <small>3 mins ago</small>
-                        </div>
-                        <p class="mb-1">I'm having trouble integrating Bootstrap with my ASP.NET Core project. Can anyone help?</p>
-                        <small>Tags: bootstrap asp.net-core</small>
-                    </a>
-                    <!-- More question items can be added here -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h2>Top Tags</h2>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">c#</a>
-                    <a href="#" class="list-group-item list-group-item-action">javascript</a>
-                    <a href="#" class="list-group-item list-group-item-action">java</a>
-                    <a href="#" class="list-group-item list-group-item-action">python</a>
-                    <a href="#" class="list-group-item list-group-item-action">html</a>
-                    <!-- More tags can be added here -->
-                </div>
-            </div>
+    <div class="col-md-8">
+        <h2>Recent Questions</h2>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to use Bootstrap in ASP.NET Core?</h5>
+        <small>3 mins ago</small>
+    </div>
+    <p class="mb-1">I'm having trouble integrating Bootstrap with my ASP.NET Core project. Can anyone help?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">bootstrap</button>
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to implement authentication in ASP.NET Core?</h5>
+        <small>1 hour ago</small>
+    </div>
+    <p class="mb-1">I need to add authentication to my ASP.NET Core application. What's the best approach?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">authentication</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to deploy an ASP.NET Core application?</h5>
+        <small>2 hours ago</small>
+    </div>
+    <p class="mb-1">I'm ready to deploy my ASP.NET Core app. What are the steps?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">deployment</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to use EF Core in ASP.NET Core?</h5>
+        <small>3 hours ago</small>
+    </div>
+    <p class="mb-1">I'm trying to use Entity Framework Core in my ASP.NET Core project. Any tips?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">entity-framework-core</button>
+    </small>
+</a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to use Python for data analysis?</h5>
+        <small>3 mins ago</small>
+    </div>
+    <p class="mb-1">I'm new to Python and want to learn how to use it for data analysis. Any resources?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">python</button>
+        <button type="button" class="btn btn-outline-primary">data-analysis</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to create responsive web designs with CSS?</h5>
+        <small>1 hour ago</small>
+    </div>
+    <p class="mb-1">I want to improve my CSS skills and create responsive web designs. Any tips?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">css</button>
+        <button type="button" class="btn btn-outline-primary">responsive-design</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to optimize SQL queries for better performance?</h5>
+        <small>2 hours ago</small>
+    </div>
+    <p class="mb-1">I'm working on a project that involves a lot of SQL queries. How can I optimize them?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">sql</button>
+        <button type="button" class="btn btn-outline-primary">performance</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to create interactive web applications with JavaScript?</h5>
+        <small>3 hours ago</small>
+    </div>
+    <p class="mb-1">I want to make my web applications more interactive using JavaScript. Any tutorials?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">javascript</button>
+        <button type="button" class="btn btn-outline-primary">web-development</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+
+           <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to handle errors in ASP.NET Core?</h5>
+        <small>4 hours ago</small>
+    </div>
+    <p class="mb-1">I'm looking for the best practices to handle errors in ASP.NET Core. Any suggestions?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">error-handling</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to secure an ASP.NET Core application?</h5>
+        <small>5 hours ago</small>
+    </div>
+    <p class="mb-1">I want to add security features to my ASP.NET Core app. Where should I start?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">security</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to use middleware in ASP.NET Core?</h5>
+        <small>6 hours ago</small>
+    </div>
+    <p class="mb-1">I'm trying to understand how middleware works in ASP.NET Core. Can someone explain?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">middleware</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to create a RESTful API in ASP.NET Core?</h5>
+        <small>7 hours ago</small>
+    </div>
+    <p class="mb-1">I need to create a RESTful API using ASP.NET Core. Any tutorials or guides?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">asp.net-core</button>
+        <button type="button" class="btn btn-outline-primary">restful-api</button>
+    </small>
+</a>
+
+           <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">What are the key concepts of object-oriented programming?</h5>
+        <small>3 mins ago</small>
+    </div>
+    <p class="mb-1">I'm new to OOP and want to understand its key concepts. Can someone explain?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">oop</button>
+        <button type="button" class="btn btn-outline-primary">programming</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How does virtualization work in cloud computing?</h5>
+        <small>1 hour ago</small>
+    </div>
+    <p class="mb-1">I'm curious about the underlying technology behind cloud computing. How does virtualization play a role?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">cloud-computing</button>
+        <button type="button" class="btn btn-outline-primary">virtualization</button>
+    </small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">What are the best practices for cybersecurity?</h5>
+        <small>2 hours ago</small>
+    </div>
+    <p class="mb-1">I want to improve the security of my systems. What are some best practices I should follow?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">cybersecurity</button>
+        <button type="button" class="btn btn-outline-primary">best-practices</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+<a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">How to implement machine learning in a web application?</h5>
+        <small>3 hours ago</small>
+    </div>
+    <p class="mb-1">I'm interested in adding machine learning capabilities to my web app. Where should I start?</p>
+    <small>Tags: 
+        <button type="button" class="btn btn-outline-primary">machine-learning</button>
+        <button type="button" class="btn btn-outline-primary">web-development</button>
+    </small>
+</a>
+
+<!-- Add more question items here -->
+
         </div>
+    </div>
+    <div class="col-md-4">
+        <h2>Top Tags</h2>
+        <div class="list-group">
+          
+            <button type="button" class="list-group-item list-group-item-action">bootstrap</button>
+            <button type="button" class="list-group-item list-group-item-action">asp.net</button> 
+            <button type="button" class="list-group-item list-group-item-action">asp.net-core</button>
+            <button type="button" class="list-group-item list-group-item-action">programming</button>
+            <button type="button" class="list-group-item list-group-item-action">web-development</button>
+            <button type="button" class="list-group-item list-group-item-action">javascript</button>
+            <button type="button" class="list-group-item list-group-item-action">python</button>
+            <button type="button" class="list-group-item list-group-item-action">java</button>
+            <button type="button" class="list-group-item list-group-item-action">csharp</button>
+            <button type="button" class="list-group-item list-group-item-action">html</button>
+            <button type="button" class="list-group-item list-group-item-action">css</button>
+            <button type="button" class="list-group-item list-group-item-action">database</button>
+            <button type="button" class="list-group-item list-group-item-action">sql</button>
+            <button type="button" class="list-group-item list-group-item-action">software-development</button>
+            <button type="button" class="list-group-item list-group-item-action">algorithm</button>
+            <button type="button" class="list-group-item list-group-item-action">data-structure</button>
+            <button type="button" class="list-group-item list-group-item-action">framework</button>
+            <button type="button" class="list-group-item list-group-item-action">frontend</button>
+            <button type="button" class="list-group-item list-group-item-action">backend</button>
+</div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
