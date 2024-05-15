@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 * {
@@ -5,6 +6,16 @@
     margin: 0;
     padding: 0;
     font-family: Raleway, sans-serif;
+=======
+﻿
+.login-container {
+    max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff; /* White */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+>>>>>>> 451881d36e56aa48a0ada895c64d46dba6f5d9c1
 }
 
 body {
@@ -112,6 +123,7 @@ body {
     transition: .2s;
 }
 
+<<<<<<< HEAD
 .login__input:active,
 .login__input:focus,
 .login__input:hover {
@@ -176,3 +188,22 @@ body {
 .social-login__icon:hover {
     transform: scale(1.5);
 }
+=======
+    .login-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+   
+ 
+    h2 {
+      color: #4169e1; /* Royal Blue */
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+   
+>>>>>>> 451881d36e56aa48a0ada895c64d46dba6f5d9c1

@@ -25,6 +25,10 @@ namespace DiscussionPanel.Controllers
         {
             return View();
         }
+        public IActionResult askaque()
+        {
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel model)
