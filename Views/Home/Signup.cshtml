@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Signup";
+
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="~/css/signup.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="screen">
+        <div class="screen__content">
+            <form class="signup">
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-user"></i>
+                    <input type="text" class="signup__input" placeholder="Username" required>
+                </div>
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-lock"></i>
+                    <input type="password" class="signup__input" placeholder="Password" required>
+                </div>
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-envelope"></i>
+                    <input type="email" class="signup__input" placeholder="Email" required>
+                </div>
+                <div class="signup__field">
+                    <i class="signup__icon fas fa-phone-alt"></i>
+                    <input type="tel" class="signup__input" placeholder="Phone Number" required>
+                </div>
+                <button type="submit" class="button signup__submit">
+                    <span class="button__text">Sign Up Now</span>
+                    <i class="button__icon fas fa-chevron-right"></i>
+                </button>                
+            </form>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>        
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>      
+    </div>
+</div>
+
+</body>
+</html>

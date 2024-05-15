@@ -29,7 +29,10 @@ namespace DiscussionPanel.Controllers
         {
             return View();
         }
-
+          public IActionResult Signup()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> Login(LoginModel model)
         {
