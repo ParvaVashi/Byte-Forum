@@ -1,9 +1,4 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light Blue */
-    margin: 0;
-    padding: 0;
-  }
+﻿
 .login-container {
     max-width: 400px;
       margin: 50px auto;
@@ -57,11 +52,4 @@ input[type="submit"] {
     .form-group {
       margin-bottom: 20px;
     }
-    label {
-      display: block;
-  
-      margin-bottom: 5px;
-    }
-    
-    
-  
+   
