@@ -1,8 +1,10 @@
 ﻿/* Navbar */
 .navbar {
-    background-color: #A0DEFF; /* Set the background color of the navbar */
+    background-color:#fffdeb; /* Set the background color of the navbar */
     border-bottom: 2px solid black; /* Add a bottom border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a box shadow */
+    min-height: 50px !important; /* Adjust the height as needed */
+    padding: 5px 0 !important; /* Adjust the top and bottom padding as needed */
 }
 
 /* Navbar Brand */
@@ -33,4 +35,20 @@
 /* Navbar Toggler Icon */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-item {
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight :600;
+}
+/* CSS */
+
+
+.login-container a {
+    color: white; /* White text color for the button */
+    text-decoration: none; /* Remove underline from the link */
+    background-color: #007bff;
+  
 }
