@@ -2,19 +2,90 @@
     ViewData["Title"] = "Login";
 }
 
-<link rel="stylesheet" href="~/css/login.css" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light Blue */
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    color: #4169e1; /* Royal Blue */
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background-color: #4169e1; /* Royal Blue */
+    color: #ffffff; /* White */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #1e90ff; /* Dodger Blue */
+  }
+</style>
+</head>
+<body>
 
-<div class="login-container">
-    <form class="login-form" method="post">
-        <h2>Login</h2>
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" class="form-control" />
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+<div class="container">
+  <h2>Login</h2>
+  <form id="loginForm" action="#">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <input type="submit" value="Login">
+  </form>
 </div>
+
+<script>
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    var username = document.getElementById("username").value.trim();
+    var password = document.getElementById("password").value.trim();
+    
+    if (username === "" || password === "") {
+      event.preventDefault();
+      alert("Please fill in both username and password fields.");
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
