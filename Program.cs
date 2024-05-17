@@ -8,7 +8,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace DiscussionPanel
 {
-    
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -77,4 +77,3 @@ namespace DiscussionPanel
         }
     }
 }
-
